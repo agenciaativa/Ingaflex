@@ -55,7 +55,7 @@
 		</ul>
 	</li>
 
-	<li class="treeview">
+	<li class="treeview" ng-class="{'active': sub == 'app.orcamentos'}">
 		<a href="#">
 			<i class="fa fa-folder"></i> <span>Orçamentos</span>
 			<span class="pull-right-container">
@@ -63,12 +63,12 @@
             </span>
 		</a>
 		<ul class="treeview-menu">
-			<li><a href="pages/tables/simple.html"><i class="fa fa-credit-card"></i> Listar</a></li>
+			<li><a ui-sref="app.orcamentos"><i class="fa fa-credit-card"></i> Listar</a></li>
 		</ul>
 	</li>
 
 	</li>
-	<li class="treeview">
+	<li class="treeview" ng-class="{'active': sub == 'app.contatos'}">
 		<a href="#">
 			<i class="fa fa-user"></i> <span>Contatos</span>
 			<span class="pull-right-container">
@@ -76,13 +76,14 @@
             </span>
 		</a>
 		<ul class="treeview-menu">
-			<li><a href="pages/examples/invoice.html"><i class="fa fa-envelope-open-o"></i> Listar</a></li>
+			<li><a ui-sref="app.contatos"><i class="fa fa-envelope-open-o"></i> Listar</a></li>
 		</ul>
 	</li>
 
 	<li class="header">USUÁRIO</li>
+	<li><a ui-sref="app.usuarios"><i class="fa fa-user text-yellow"></i> <span>Gerenciar Usuários</span></a></li>
 	<li><a href="#"><i class="fa fa-question text-aqua"></i> <span>Ajuda</span></a></li>
-	<li><a href="#"><i class="fa fa-close text-red"></i> <span>Sair</span></a></li>
+	<li><a href="./"><i class="fa fa-close text-red"></i> <span>Sair</span></a></li>
 
 
 </ul>

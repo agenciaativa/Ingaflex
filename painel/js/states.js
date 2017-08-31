@@ -43,18 +43,22 @@
                 templateUrl: 'partials/clientes.html',
                 controller: 'clientesController'
             })
-        /*.state('app.fale-conosco', {
-           url: '/fale-conosco',
-           templateUrl: 'partials/fale-conosco.html',
-           controller: 'contatoController'
-       })
+            .state('app.orcamentos', {
+                url: '/orcamentos',
+                templateUrl: 'partials/orcamentos.html',
+                controller: 'orcamentosController'
+            })
+            .state('app.contatos', {
+                url: '/contatos',
+                templateUrl: 'partials/contatos.html',
+                controller: 'contatosController'
+            })
+            .state('app.usuarios', {
+                url: '/usuarios',
+                templateUrl: 'partials/users.html',
+                controller: 'usuariosController'
+            })
 
-       .state('app.newsletter', {
-           url: '/newsletter',
-           templateUrl: 'partials/newsletter.html',
-           controller: 'newsletterController'
-       })
-       */
 	};
 
 	config.$inject = ['$stateProvider'];
@@ -63,57 +67,3 @@
 
 		.config(config);
 })();
-
-/*
-angular.module('ativaApp.states', ['ui.router'])
-	.config(function($stateProvider, $urlRouterProvider) {
-
-	$urlRouterProvider.otherwise('/app');
-
-	$stateProvider
-		.state('app.home', {
-			url: '/home',
-			templateUrl: 'partials/home.html',
-			controller: 'homeController'
-		})
-		.state('app.empresa', {
-			url: '/empresa',
-			templateUrl: 'partials/empresa.html',
-			controller: 'homeController'
-		})
-		.state('app.servicos-solucoes', {
-			url: '/servicos-solucoes',
-			templateUrl: 'partials/servicos-solucoes.html',
-			controller: 'homeController'
-		})
-		.state('app.clientes', {
-			url: '/clientes',
-			templateUrl: 'partials/clientes.html',
-			controller: 'homeController'
-		})
-		.state('app.cases', {
-			url: '/cases',
-			templateUrl: 'partials/cases.html',
-			controller: 'homeController'
-		})
-		.state('app.fale-conosco', {
-			url: '/fale-conosco',
-			templateUrl: 'partials/fale-conosco.html',
-			controller: 'homeController'
-		})
-		.state('app.banners', {
-			url: '/banners',
-			templateUrl: 'partials/banners.html',
-			controller: 'homeController'
-		})
-		.state('app.newsletter', {
-			url: '/newsletter',
-			templateUrl: 'partials/newsletter.html',
-			controller: 'homeController'
-		})
-		.state('app.configuracoes', {
-			url: '/configuracoes',
-			templateUrl: 'partials/fale-conosco.html',
-			controller: 'homeController'
-		})
-});*/

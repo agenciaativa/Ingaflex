@@ -75,11 +75,11 @@ angular.module('ativaApp.controllers', [])
 
 	}])
 
-	.controller('casesController', ['$state', '$rootScope', '$scope', 'fileReader', function($state, $rootScope, $scope, fileReader) {
+	.controller('orcamentosController', ['$state', '$rootScope', '$scope', 'fileReader', function($state, $rootScope, $scope, fileReader) {
 		var state = $state.current.name;
-		$rootScope.state = 'app.home';
+		$rootScope.state = 'app.orcamentos';
 		$rootScope.sub = state;
-		$rootScope.title = $rootScope.active_page = 'Cases';
+		$rootScope.title = $rootScope.active_page = 'Orçamentos';
 
 		$scope.getFile = function () {
 			fileReader.readAsDataUrl($scope.file, $scope)
@@ -97,25 +97,49 @@ angular.module('ativaApp.controllers', [])
 		});
 	}])
 
-	.controller('contatoController', ['$state', '$rootScope', '$scope', function($state, $rootScope, $scope) {
-		var state = $state.current.name;
-		$rootScope.state = $rootScope.sub = state;
-		$rootScope.title = $rootScope.active_page = 'Fale Conosco';
-	}])
+    .controller('contatosController', ['$state', '$rootScope', '$scope', 'fileReader', function($state, $rootScope, $scope, fileReader) {
+        var state = $state.current.name;
+        $rootScope.state = 'app.contatos';
+        $rootScope.sub = state;
+        $rootScope.title = $rootScope.active_page = 'Contatos';
 
-	.controller('bannersController', ['$state', '$rootScope', '$scope', 'fileReader', function($state, $rootScope, $scope, fileReader) {
-		var state = $state.current.name;
-		$rootScope.state = $rootScope.sub = state;
-		$rootScope.title = $rootScope.active_page = 'Banners';
+        $scope.getFile = function () {
+            fileReader.readAsDataUrl($scope.file, $scope)
+                .then(function(result) {
+                    $scope.imageSrc = result;
+                });
+        };
 
-		$scope.getFile = function () {
-			fileReader.readAsDataUrl($scope.file, $scope)
-			.then(function(result) {
-				$scope.imageSrc = result;
-			});
-		};
+        $scope.$on('$viewContentLoaded', function(){
+            var config = {
+                resize_enabled: false,
+                height: 216
+            };
 
-	}])
+        });
+    }])
+
+    .controller('usuariosController', ['$state', '$rootScope', '$scope', 'fileReader', function($state, $rootScope, $scope, fileReader) {
+        var state = $state.current.name;
+        $rootScope.state = 'app.usuarios';
+        $rootScope.sub = state;
+        $rootScope.title = $rootScope.active_page = 'Usuários';
+
+        $scope.getFile = function () {
+            fileReader.readAsDataUrl($scope.file, $scope)
+                .then(function(result) {
+                    $scope.imageSrc = result;
+                });
+        };
+
+        $scope.$on('$viewContentLoaded', function(){
+            var config = {
+                resize_enabled: false,
+                height: 216
+            };
+
+        });
+    }])
 
 	.controller('newsletterController', ['$state', '$rootScope', '$scope', function($state, $rootScope, $scope) {
 		var state = $state.current.name;
