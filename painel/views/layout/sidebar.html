@@ -1,0 +1,160 @@
+<!-- Sidebar user panel -->
+<div class="user-panel">
+	<div class="pull-left image">
+
+	</div>
+	<div class="pull-left info">
+		<p>Ingaflex</p>
+		<a href="javascript:;">ID Solutions</a>
+	</div>
+</div>
+
+<!-- sidebar menu: : style can be found in sidebar.less -->
+<ul class="sidebar-menu" data-widget="tree">
+	<li class="header">NAVEGAÇÃO</li>
+
+	<li class="treeview" ng-class="{'active': state == 'app.home'}">
+		<a href="#">
+			<i class="fa fa-dashboard"></i>
+			<span>Configurações</span>
+			<span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+		</a>
+		<ul class="treeview-menu" ng-class="{'active': sub == 'app.home'}">
+			<li><a ui-sref="app.manutencao"><i class="fa fa-laptop"></i> Modo Manutenção</a></li>
+			<li><a ui-sref="app.configuracoes"><i class="fa fa-laptop"></i> Configurações</a></li>
+		</ul>
+	</li>
+
+	<li class="treeview">
+		<a href="#">
+			<i class="fa fa-book"></i>
+			<span>Páginas</span>
+			<span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+		</a>
+		<ul class="treeview-menu" ng-class="{'active': sub == 'app.home'}">
+			<li><a ui-sref="app.empresa"><i class="fa fa-file-text-o"></i> Empresa</a></li>
+			<li><a ui-sref="app.logistica"><i class="fa fa-file-text-o"></i> Logística</a></li>
+			<li><a ui-sref="app.frase"><i class="fa fa-file-text-o"></i> Frase Home</a></li>
+		</ul>
+	</li>
+
+	<li class="treeview" ng-class="{'active': sub == 'app.portfolio'}">
+		<a href="#">
+			<i class="fa fa-edit"></i> <span>Serviços</span>
+			<span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+		</a>
+		<ul class="treeview-menu">
+			<li><a ui-sref="app.portfolio"><i class="fa fa-stack-overflow"></i> Portfólio</a></li>
+			<li><a ui-sref="app.clientes"><i class="fa fa-stack-overflow"></i> Clientes</a></li>
+		</ul>
+	</li>
+
+	<li class="treeview">
+		<a href="#">
+			<i class="fa fa-folder"></i> <span>Orçamentos</span>
+			<span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+		</a>
+		<ul class="treeview-menu">
+			<li><a href="pages/tables/simple.html"><i class="fa fa-credit-card"></i> Listar</a></li>
+		</ul>
+	</li>
+
+	</li>
+	<li class="treeview">
+		<a href="#">
+			<i class="fa fa-user"></i> <span>Contatos</span>
+			<span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+		</a>
+		<ul class="treeview-menu">
+			<li><a href="pages/examples/invoice.html"><i class="fa fa-envelope-open-o"></i> Listar</a></li>
+		</ul>
+	</li>
+
+	<li class="header">USUÁRIO</li>
+	<li><a href="#"><i class="fa fa-question text-aqua"></i> <span>Ajuda</span></a></li>
+	<li><a href="#"><i class="fa fa-close text-red"></i> <span>Sair</span></a></li>
+
+
+</ul>
+
+<!-- Sidebar user panel -->
+<!--
+<div class="user-panel">
+	<div class="pull-left image">
+		<img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+	</div>
+	<div class="pull-left info">
+		<p>UNO CONSULTORIA</p>
+		<p>Gestão de Saúde</p>
+	</div>
+</div>
+&lt;!&ndash; sidebar menu &ndash;&gt;
+<ul class="sidebar-menu" data-widget="tree">
+	<li class="header text-center">MENU</li>
+	<li class="treeview" ng-class="{'active': state == 'app.home'}">
+		<a href="#">
+			<i class="fa fa-file-text-o"></i> 
+			<span>Páginas</span>
+			<span class="pull-right-container">
+				<i class="fa fa-angle-left pull-right"></i>
+			</span>
+		</a>
+		<ul class="treeview-menu">
+			<li ng-class="{'active': sub == 'app.home'}">
+				<a ui-sref="app.home">
+					<i class="fa fa-circle-o"></i>Home
+				</a>
+			</li>
+			<li ng-class="{'active': sub == 'app.empresa'}">
+				<a ui-sref="app.empresa">
+					<i class="fa fa-circle-o"></i>A Empresa
+				</a>
+			</li>
+			<li ng-class="{'active': sub == 'app.servicos-solucoes'}">
+				<a ui-sref="app.servicos-solucoes">
+					<i class="fa fa-circle-o"></i>Serviços e Soluções
+				</a>
+			</li>
+			<li ng-class="{'active': sub == 'app.clientes'}">
+				<a ui-sref="app.clientes">
+					<i class="fa fa-circle-o"></i>Clientes
+				</a>
+			</li>
+			<li ng-class="{'active': sub == 'app.cases'}">
+				<a ui-sref="app.cases">
+					<i class="fa fa-circle-o"></i>Cases
+				</a>
+			</li>
+			<li ng-class="{'active': sub == 'app.fale-conosco'}">
+				<a ui-sref="app.fale-conosco">
+					<i class="fa fa-circle-o"></i>Fale Conosco
+				</a>
+			</li>
+		</ul>
+	</li>
+	<li ng-class="{'active': state == 'app.banners'}">
+		<a ui-sref="app.banners">
+			<i class="fa fa-image"></i> <span>Banners</span>
+		</a>
+	</li>
+	<li ng-class="{'active': state == 'app.newsletter'}">
+		<a ui-sref="app.newsletter">
+			<i class="fa fa-envelope"></i> <span>Newsletter</span>
+		</a>
+	</li>
+	<li ng-class="{'active': state == 'app.configuracoes'}">
+		<a ui-sref="app.configuracoes">
+			<i class="fa fa-cogs"></i> <span>Configurações Gerais</span>
+		</a>
+	</li>
+</ul>-->

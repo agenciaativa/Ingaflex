@@ -1,0 +1,87 @@
+<div class="box box-default">
+	<div class="box-header with-border">
+		<h3 class="box-title">Portfólio</h3>
+
+	</div>
+	<!-- /.box-header -->
+
+	<div class="box-body">
+
+		<div class="form-group col-md-12">
+			<div class="alert alert-success">Dados enviados com sucesso!</div>
+			<div class="alert alert-danger">Ocorreu um erro, tente novamente</div>
+		</div>
+
+		<div class="row">
+
+			<div class="col-md-6">
+
+				<div class="form-group col-md-12">
+
+					<label>Imagem Capa</label>
+					<input type="file" name="file" class="form-control" placeholder="">
+
+				</div>
+
+				<div class="form-group col-md-12">
+					<label>Nome</label>
+					<input type="text" name="titulo" class="form-control" placeholder="">
+
+				</div>
+
+				<div class="form-group col-md-12">
+					<label>Categoria</label>
+
+					<select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
+						<option selected="selected">Selecionar</option>
+						<option>Habilitar</option>
+						<option>Desabilitar</option>
+					</select>
+
+				</div>
+
+				<div class="form-group col-md-12">
+					<label>Descrição</label>
+
+					<textarea name="descricao" ui-tinymce="tinymceOptions" ng-model="tinymceModel" class="form-control" placeholder=""></textarea>
+
+				</div>
+
+				<div class="form-group col-md-12">
+					<button class="btn btn-success">Salvar</button>
+				</div>
+				<!-- /.form-group -->
+
+			</div>
+
+			<div class="col-md-6">
+
+				<table class="table table-striped">
+
+					<thead>
+						<tr>
+							<td>Nome</td>
+							<td>Gal</td>
+							<td>Add</td>
+							<td>Del</td>
+						</tr>
+					</thead>
+
+					<tbody>
+
+						<tr>
+							<td>Embalagem Naturafrig Bala de Prata</td>
+							<td>+</td>
+							<td>+</td>
+							<td>-</td>
+						</tr>
+
+					</tbody>
+				</table>
+
+			</div>
+
+
+		</div>
+	</div>
+</div>

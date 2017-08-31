@@ -1,0 +1,74 @@
+<!-- Main row -->
+<div class="row">
+	<div class="col-md-12">
+		<form role="form">
+			<div class="box box-info">
+				<div class="box-header with-border">
+					<h3 class="box-title">
+						Área texto
+					</h3>
+				</div>
+				<div class="box-body pad">
+					<div class="form-group">
+						<label for="text_clientes">Texto</label>
+						<textarea id="text_clientes" name="text_clientes" class="ckeditor" rows="10" cols="80"></textarea>
+					</div>
+				</div>
+				<div class="box-footer">
+					<div class="pull-right">
+						<button type="submit" class="btn btn-primary">
+							<i class="fa fa-save"></i>&nbsp;&nbsp;Salvar
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="box box-info">
+				<div class="box-header with-border">
+					<h3 class="box-title">
+						Adicionar Clientes
+					</h3>
+				</div>
+				<div class="box-body pad">
+					<div class="row">
+						<div class="col-md-6">
+							
+						</div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<label for="imagem_title">Título</label>
+										<input type="text" class="form-control" id="imagem_title" name="imagem_title" placeholder="Título cliente">
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<label for="imagem_cliente">Imagem JPG/JPEG (Largura: 311px, Altura: 233px)</label>
+										<input type="file" id="imagem_cliente" name="imagem_cliente" class="form-control" ng-file-select="onFileSelect($files)">
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<label>Visualização</label>
+										<div class="image-view well well-sm no-shadow">
+											<i ng-hide="imageSrc">Sem imagem para visualização</i>
+											<img ng-src="{{imageSrc}}" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box-footer">
+					<div class="pull-right">
+						<button type="submit" class="btn btn-primary">
+							<i class="fa fa-save"></i>&nbsp;&nbsp;Salvar
+						</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+<!-- /.row -->
