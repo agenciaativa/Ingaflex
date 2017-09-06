@@ -4,6 +4,5 @@
     <file url="file://$PROJECT_DIR$/painel" libraries="{ingaflex/painel/node_modules}" />
     <file url="file://$PROJECT_DIR$/painelAdm" libraries="{ingaflex/painel/node_modules}" />
     <file url="PROJECT" libraries="{bootstrap}" />
-    <excludedPredefinedLibrary name="ingaflex/painelAdm/node_modules" />
   </component>
 </project>
